@@ -1,21 +1,18 @@
 /* Roulette */
 .Roulette {
     overflow: hidden;
-    margin: 0 auto;
-    max-width: 1280px;
+    margin: 5% auto 0;
+    max-width: 90%;
     border-radius: 30px;
-
-    @media (max-width: 1280px) {
-        border-radius: 0px;
-    }
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 25px;
 
     &__pro-wrapper-additional-styles {
-        padding: 33px 0 82px;
-        background: rgba(0, 0, 0, 0.6);
+        padding: 5% 0 5%;
         min-height: 265px;
-    }
-
-    @media (max-width: 600px) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.166), rgba(0, 0, 0, 0.166)), url('https://img.freepik.com/free-vector/gradient-christmas-tinsel-background_52683-76117.jpg?w=2000');
+        background-size: contain;
+        background-position: center;
+        height: 100%;
         width: 100%;
     }
 }
@@ -34,10 +31,9 @@
     }
 
     &__GrayBlock {
-        background: linear-gradient(to bottom, #202020 65%, rgba(7, 7, 7, 0) 92%, rgba(0, 0, 0, 0) 99%);
         max-width: 398px;
         border-radius: 38px;
-        padding: 18px 13px 5px;
+        padding: 5px 5px 0px;
         margin: 0 auto;
         min-height: 70px;
         box-sizing: border-box;
@@ -50,57 +46,26 @@
             display: flex;
             position: relative;
             z-index: 2;
-            margin-top: 25px;
-
-            &::after {
-                content: "";
-                width: 377px;
-                height: 160px;
-                background: url("../../images/button-background.png") center center no-repeat;
-                background-size: 100% auto;
-                top: 50%;
-                /* left: 50%; */
-                left: 54%;
-                margin: -80px 0 0 -188px;
-                position: absolute;
-                z-index: -1;
-            }
+            width: 100%;
+            height: 150px;
 
             .SpinButton {
-                position: relative;
-                z-index: 2;
-                width: 350px;
-                font-size: 21px;
-                border-radius: 41px;
-                padding: 24px 35px;
-                box-shadow: 0px 2px 0 2px rgba(155, 106, 0, 0.70);
-                color: #000;
-                transition: all 0.3s ease-out;
-                background: linear-gradient(to bottom, #ffc12f 0%, #ffe324 50%, #ffc12f 100%);
-                text-transform: uppercase;
-                font-weight: 700;
-                cursor: pointer;
-                outline: none;
-                border: none;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                padding: 0;
+                left: 0;
+                top: 0;
+                background: url("../../images/button-background.png") center center no-repeat;
+                background-size: cover;
+                border: 0;
 
-                &:hover::after {
-                    opacity: 1;
-                }
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    height: 100%;
-                    width: 100%;
-                    opacity: 0;
-                    transition: all 0.3s ease-out;
-                    border-radius: inherit;
-                    background: linear-gradient(to bottom, #ffef85 0%, #f8d40a 50%, #ffef85 100%);
-                    z-index: -2;
+                &:hover {
+                    filter: brightness(150%);
+                    cursor: pointer;
                 }
             }
+
         }
     }
 

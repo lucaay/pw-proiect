@@ -202,9 +202,6 @@ const App = () => {
     return (
         <div>
             <div className={classes["Roulette"]}>
-                <audio controls>
-                    <source src={sound} type="audio/ogg"/>
-                </audio>
                 <RoulettePro
                     type={"horizontal"}
                     prizes={prizeList}
@@ -235,7 +232,6 @@ const App = () => {
                             className={classes["SpinButton"]}
                             type="button"
                         >
-                            Încearcă-ți norocul! 🎰🎰🎰
                         </button>
                     </div>
                 </div>

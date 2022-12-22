@@ -106,7 +106,20 @@ input {
     border-radius: 0;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
 body {
     font-family: system-ui, sans-serif;
-    background: #1f1f1f url("../images/background.jpeg");
+    // background: #1f1f1f url("../images/background.jpeg");
+    background: url("https://images.pexels.com/photos/1303085/pexels-photo-1303085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFF;
+
 }
