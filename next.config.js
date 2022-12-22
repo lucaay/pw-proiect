@@ -4,13 +4,14 @@ const nextConfig = {
     reactStrictMode: true,
     webpack(config, options) {
         config.module.rules.push({
-            test: /\.(ogg|mp3)$/,
+            test: /\.mp3$/,
             use: {
-                loader: 'file-loader',
+                loader: 'url-loader',
             },
         });
         return config;
     },
+
 }
 
 module.exports = nextConfig;

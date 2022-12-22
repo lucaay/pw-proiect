@@ -8,7 +8,7 @@ import "react-roulette-pro/dist/index.css";
 import reproductionArray from "../../utils/reproductionArray";
 import getRandomIntInRange from "../../utils/getRandomIntInRange";
 
-import sound from '../../sounds/sound.ogg';
+import sound from '/src/sounds/sound-trimmed-shorter.mp3';
 
 import classes from "./roulette.module.scss";
 
@@ -125,7 +125,7 @@ const App = () => {
         spinningTime: {
             name: "Spinning time",
             options: ["3", "5", "10", "15", "20", "25", "30"],
-            value: "30",
+            value: "16.6",
         },
     });
 
@@ -148,8 +148,6 @@ const App = () => {
         }));
 
         setPrizeList(list);
-
-        console.log(sound);
         
         
     }, []);
