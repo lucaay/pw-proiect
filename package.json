@@ -24,6 +24,7 @@
     "file-loader": "^6.2.0",
     "nanoid": "^3.2.0",
     "react-roulette-pro": "^3.0.5",
+    "react-snowfall": "^1.2.1",
     "sass": "^1.57.1",
     "sweetalert2": "^11.4.0",
     "url-loader": "^4.1.1"
