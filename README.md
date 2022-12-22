@@ -1,5 +1,5 @@
 University project for the Web Programming course
 
-LIVE DEMO: https://pw-proiect-4bd1.vercel.app/
+LIVE DEMO: https://pw-proiect.vercel.app/
 
 Dunarea de Jos University of Galati
