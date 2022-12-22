@@ -99,24 +99,6 @@ const App = () => {
             value: false,
             forDesign: "Regular",
         },
-        // hideTopArrow: {
-        //   name: 'Hide top arrow',
-        //   options: [false, true],
-        //   value: false,
-        //   forDesign: 'GracefulLines',
-        // },
-        // hideSideArrows: {
-        //   name: 'Hide side arrows',
-        //   options: [false, true],
-        //   value: false,
-        //   forDesign: 'GracefulLines',
-        // },
-        // replaceBottomArrowWithTopArrow: {
-        //   name: 'Replace bottom arrow with top arrow',
-        //   options: [false, true],
-        //   value: false,
-        //   forDesign: 'GracefulLines',
-        // },
         soundWhileSpinning: {
             name: "Sound while spinning",
             options: [false, true],
@@ -137,8 +119,10 @@ const App = () => {
     useEffect(() => {
         const reproducedArray = [
             ...prizes,
+            // @ts-ignore: Unreachable code error
             ...reproductionArray(prizes, prizes.length * 3),
             ...prizes,
+            // @ts-ignore: Unreachable code error
             ...reproductionArray(prizes, prizes.length),
         ];
 
@@ -146,10 +130,8 @@ const App = () => {
             ...item,
             id: `${item.id}--${nanoid()}`,
         }));
-
+        // @ts-ignore: Unreachable code error
         setPrizeList(list);
-        
-        
     }, []);
 
     useEffect(() => {
